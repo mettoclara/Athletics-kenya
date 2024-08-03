@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlectis </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Events.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+</head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo3.jpg" alt="Sports Club Logo">
+                </div>
+                <button class="menu-toggle">Menu</button>
+                <ul class="nav-linksm" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="athletes.html">Athletes</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+        </header>
+      <main class="cv-page">
+
+        <div class="slider">
+            <div class="slide active" style="background-image: url('images/design2.jpg');">
+                <div class="content">
+                    <h2>Join us </h2>
+                    <p>Experience the best in athletics and sports with our professional team and state-of-the-art facilities.</p>
+                    <a href="#" class="btn">Become A Member</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/wife.jpg');">
+                <div class="content">
+                    <h2>Track and Field</h2>
+                    <p>Join our track and field team and compete at the highest levels with top-notch coaching and training.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/run1.jpg');">
+                <div class="content">
+                    <h2>Upcoming Events</h2>
+                    <p>Stay updated with our upcoming sports events and competitions. Don't miss out on the action!</p>
+                    <a href="#" class="btn">View Events</a>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- info section -->
+        <!-- Placeholder for Events.html content -->
+        <div id="profile-content"></div>
+        <div id="gallery-content"></div>
+        <!-- end info section -->
+
+    </main>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social">
+            <a href="mailto:internationalelitetc@gmail.com">
+                <img src="images/icons8-gmail-48.png" alt="Email Icon" class="icon"> Gmail
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/icons8-instagram-48.png" alt="Instagram Icon" class="icon"> Instagram
+            </a>
+        </div>
+        <div class="copyright">
+            &copy;2024 World Athletics. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+  <!-- Footer -->
+
+<script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script>
+if ($(window).width() > 1024) {
+    document.write("<" + "script src='js/jquery.preloader.js'></" + "script>");
+}
+</script>
+
+<script>
+jQuery(window).load(function () {
+    $x = $(window).width();
+    if ($x > 1024) {
+        jQuery("#content .row").preloader();
+    }
+    jQuery('.spinner').animate({
+        'opacity': 0
+    }, 1000, 'easeOutCubic', function () {
+        jQuery(this).css('display', 'none')
+    });
+});
+</script> 
+<script>
+  $(document).ready(function(){
+      $("#profile-content").load("Events.html #content");
+  });
+</script>
+<script>
+  $(document).ready(function(){
+      $("#gallery-content").load("gallery.html #content");
+  });
+</script>
+</body>
+</html>

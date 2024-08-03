@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="Events.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        jQuery(window).load(function () {
+            var $x = $(window).width();
+            if ($x > 1024) {
+                jQuery("#content .row").preloader();
+            }
+            jQuery('.spinner').animate({
+                'opacity': 0
+            }, 1000, 'easeOutCubic', function () {
+                jQuery(this).css('display', 'none');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo3.jpg" alt="Sports Club Logo">
+            </div>
+            <button class="menu-toggle">Menu</button>
+            <ul class="nav-linksm" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="cv-page">
+        <div class="bg-content">
+            <div id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            <h3 style="color:#0242AE;">Events</h3>
+                        </div>
+                        <div class="clear"></div>
+                        <ul class="thumbnails thumbnails-1 list-services">
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1"> 
+                                    <img src="images/coach.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Coaching Seminar</a>
+                                        <p>Join our coaching seminar to enhance your skills and learn from experienced professionals in the field.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1"> 
+                                    <img src="images/jemutai.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Marathon Training</a>
+                                        <p>Prepare for the marathon with our intensive training programs designed to boost your endurance and performance.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1"> 
+                                    <img src="images/denis.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Track and Field Events</a>
+                                        <p>Participate in our track and field events and showcase your athletic prowess across various disciplines.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1" id="david"> 
+                                    <img src="images/david.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Athletics Meet</a>
+                                        <p>Compete with top athletes at our annual athletics meet and strive for excellence in your chosen events.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1"> 
+                                    <img src="images/image1.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Cross Country Run</a>
+                                        <p>Challenge yourself with our cross-country run and experience the thrill of running through diverse terrains.</p>
+                                    </section>
+                                </div>
+                            </li>
+                            <li class="span4">
+                                <div class="thumbnail thumbnail-1"> 
+                                    <img src="images/design2.jpg" alt="">
+                                    <section>
+                                        <a href="#" class="link-1">Sports Clinic</a>
+                                        <p>Attend our sports clinic for personalized coaching, medical advice, and performance enhancement tips.</p>
+                                    </section>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social">
+            <a href="mailto:internationalelitetc@gmail.com">
+                <img src="images/icons8-gmail-48.png" alt="Email Icon" class="icon"> Gmail
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/icons8-instagram-48.png" alt="Instagram Icon" class="icon"> Instagram
+            </a>
+        </div>
+        <div class="copyright">
+            &copy;2024 World Athletics. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+  <!-- Footer -->
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
